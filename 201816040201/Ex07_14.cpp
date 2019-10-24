@@ -9,7 +9,7 @@ int main()
 
 	vector<int> a1;///a1为原始数组
 	
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 20; i++)
 	{
 		int x;
 		cin >> x;
