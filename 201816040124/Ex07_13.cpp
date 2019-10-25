@@ -8,8 +8,8 @@ using namespace std;
 int main()
 {
     const int arraySize=20;
-    array<int,arraySize>a={0};//定义并初始化array对象a
-    int asize=0,tz=0;//a的下标，判断是否输出array
+    array<int,arraySize>a={0};//声明并初始化array对象a
+    int asize=0,tz=0;//a的下标，判断是否输出array对象的数据成员
     for(int i=0;i<arraySize;i++)
     {
         int x;
@@ -17,7 +17,7 @@ int main()
         if(x<10||x>100)//判断数据是否有效
         {
             cout<<"非有效数据，错误"<<endl;//反馈
-            tz=1;
+            tz=1;//存在非有效数据，则tz=0，不进行输出
             break;
         }
         else
@@ -60,5 +60,5 @@ int main()
     }
 
     return 0;
-}
+}//main函数结束
 
